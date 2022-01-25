@@ -7,9 +7,9 @@ pipeline {
       }
     }
 
-    stage('Build') {
+    stage('Update') {
       steps {
-        sh 'npm run build'
+        sh 'apt update && apt install yarn -y'
       }
     }
 
